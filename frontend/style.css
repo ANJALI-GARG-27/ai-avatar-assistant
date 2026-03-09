@@ -1,0 +1,80 @@
+body{
+font-family:Arial;
+padding:40px;
+background:#f5f7fb;
+}
+
+#assistant{
+position:fixed;
+bottom:20px;
+right:20px;
+width:280px;
+}
+
+#avatar{
+font-size:70px;
+text-align:center;
+animation: float 3s ease-in-out infinite;
+}
+
+#chatbox{
+background:white;
+border-radius:12px;
+padding:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+input{
+width:100%;
+padding:8px;
+margin-bottom:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+background:#0078ff;
+color:white;
+border:none;
+padding:10px;
+border-radius:6px;
+cursor:pointer;
+margin-top:5px;
+}
+
+#mic-btn{
+background:#28a745;
+}
+
+#response{
+margin-top:10px;
+background:#f1f3f6;
+padding:10px;
+border-radius:6px;
+font-size:14px;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.1)}
+100%{transform:scale(1)}
+}
+
+@keyframes talk{
+0%{transform:scale(1)}
+50%{transform:scale(1.15)}
+100%{transform:scale(1)}
+}
+
+@keyframes glow{
+0%{filter:drop-shadow(0 0 2px #00aaff)}
+50%{filter:drop-shadow(0 0 10px #00aaff)}
+100%{filter:drop-shadow(0 0 2px #00aaff)}
+}
